@@ -10,8 +10,8 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-from models import RAGQuery, RAGResponse, Citation
-from data_seed import ENTITIES_DATA, SOURCES_DATA, COMPARATIVE_DATA, PLACES_DATA
+from .models import RAGQuery, RAGResponse, Citation
+from .data_seed import ENTITIES_DATA, SOURCES_DATA, COMPARATIVE_DATA, PLACES_DATA
 
 class ScholarlyChunk:
     def __init__(self, chunk_id: str, title: str, text: str, source_id: str, category: str, related_entities: List[str], metadata: Dict[str, Any]):

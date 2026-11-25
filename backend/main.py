@@ -8,16 +8,16 @@ from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional, Dict, Any
 import networkx as nx
 
-from models import (
+from .models import (
     Entity, Relationship, GraphData, GraphNode, GraphEdge,
     SourceItem, ComparativeAnalysis, LearningJourney, Place,
     RAGQuery, RAGResponse, BookmarkCreate, EntityCategory, EntityType
 )
-from data_seed import (
+from .data_seed import (
     ENTITIES_DATA, RELATIONSHIPS_DATA, SOURCES_DATA,
     COMPARATIVE_DATA, JOURNEYS_DATA, PLACES_DATA
 )
-from rag_engine import rag_engine_instance
+from .rag_engine import rag_engine_instance
 
 app = FastAPI(
     title="ANVESHANA API",

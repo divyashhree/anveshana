@@ -3,7 +3,7 @@ ANVESHANA Knowledge Base Seed Data
 Curated scholarly datasets across Mathematics, Linguistics, Astronomy, Metallurgy, Architecture, and Epistemology.
 """
 
-from models import (
+from .models import (
     Entity, Relationship, SourceItem, ComparativeAnalysis, LearningJourney, Place,
     EntityCategory, EntityType, RelationType, EvidenceLevel, ComparisonDimension, JourneyStep
 )
